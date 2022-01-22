@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera Mexicana</title>
+</head>
+<style>
+    /*Resetear la base para que no deje margen en los bordes*/
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    html {
+        box-sizing: border-box;
+        font-size: 65.5;
+    }
+
+
+    .grid-container {
+        height: auto;
+        width: 100%;
+        background: cornflowerblue;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    @media(max-width: 1000px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+        }
+
+        img {
+            transform: rotate(90deg);
+        }
+
+    }
+
+
+    div {
+        width: 100%;
+        height: 100vh;
+        outline: solid 1px red;
+    }
+
+    .verde {
+        background: green;
+    }
+
+    .blanco {
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rojo {
+        background: red;
+    }
+
+    .escudo {
+        background: transparent;
+        height: 50vh;
+        width: 50vh;
+    }
+
+    .escudo img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<body>
+
+    <div class="grid-container">
+
+        <div class="verde"> </div>
+        <div class="blanco">
+            <div class="escudo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Coat_of_arms_of_Mexico.svg/1200px-Coat_of_arms_of_Mexico.svg.png"
+                    alt="escudo de mexico">
+            </div>
+        </div>
+        <div class="rojo"> </div>
+    </div>
+</body>
+
+</html>
